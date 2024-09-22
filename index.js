@@ -1,0 +1,1 @@
+const countNow = document.querySelectorAll(".counter");
