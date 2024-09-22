@@ -1,5 +1,6 @@
 body{
-background-image: url(baseball-stadium.jpg);
+background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+url(baseball-stadium.jpg);
 background-position: right;
 background-size: cover;
 background-repeat: no-repeat;
@@ -8,28 +9,39 @@ text-align: center;
 height: 100vh;
 text-align: center;
 }
-h1{
-  display: block;
+.title{
+  font-size: 48px;
+}
+.sub-heading{
+  margin-bottom: 80px;
 }
 i{
   color:#1D8BF7;
   font-size: 70px;
 }
-.container{
-  color: black;
+.app{
+color: black;
+text-align: center;
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 background-color: white;
+max-width: 900px;
 padding: 50px;
+border-radius:10px;
+margin: 0 auto;
 border-left: 9px dotted red;
 opacity: 0.9;
+}
+.container{ 
   display: flex;
-  justify-content: space-evenly;
-  margin: 0;
+  justify-content: space-between;
+
 }
 .statistics-container{
   text-align: center;
+ 
 }
 .counter{
-  margin-top: 40px;
+  margin-top: 38px;
   font-size: 50px;
   text-align: center;
 }
