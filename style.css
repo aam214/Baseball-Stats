@@ -9,6 +9,7 @@ text-align: center;
 height: 100vh;
 text-align: center;
 }
+
 .title{
   font-size: 70px;
   font-family: "Pacifico", cursive;
@@ -19,22 +20,26 @@ text-align: center;
   margin-bottom: 80px;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
+  font-size: 40px;
   font-style: normal;
 }
 i{
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   color:#1D8BF7;
-  font-size: 90px;
+  margin-left: -10px;
+  font-size: 80px;
+  border-radius: 20px;
 }
 .app{
 color: black;
 text-align: center;
 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-background-color: rgb(230, 228, 228);
+background-color: rgb(194, 194, 194);
 max-width: 1000px;
 padding: 50px;
 border-radius:10px;
 margin: 0 auto;
-border-left: 9px dotted red;
+border-left: 5px dotted red;
 opacity: 0.9;
 }
 .container{ 
