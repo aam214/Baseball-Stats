@@ -45,3 +45,17 @@ opacity: 0.9;
   font-size: 50px;
   text-align: center;
 }
+@media(max-width:600px){
+ .app{
+  margin: 40px;
+ } 
+  .container{
+    flex-direction: column;
+  }
+  i{
+    margin-top: 27px;
+  }
+  .counter{
+    font-size: 34px;
+  }
+}
