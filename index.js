@@ -1,20 +1,21 @@
-const countsNow = document.querySelectorAll(".counter");
+const counters = document.querySelectorAll(".counter");
 
-countsNow.forEach(countNow => {
-  countNow.innerText = "0";
-increaseNumber(countNow);
+counters.forEach(counter => {
+  counter.innerText = "0";
+increaseNumber(counter);
 
-function increaseNumber(countNow) {
-let currentNumber = +countNow.innerText;
-const dataCeil = countNow.getAttribute("data-ceil");
+function increaseNumber(counter) {
+let currentNumber = +counter.innerText;
+//get attribute from HTML element
+const dataCeil = counter.getAttribute("data-ceil");
 //increase by 1% when the function gets called.
 const increaseIt = dataCeil / 100;
 currentNumber = Math.ceil(currentNumber + increaseIt);
 if(currentNumber < dataCeil) {
-  countNow.innerText = currentNumber;
-  setTimeout(() => increaseNumber(countNow), 20);
+  counter.innerText = currentNumber;
+  setTimeout(() => increaseNumber(counter), 10);
 } else {
-countNow.innerText = dataCeil;
+counter.innerText = dataCeil;
 }
 }
 });
